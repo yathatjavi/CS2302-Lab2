@@ -1,8 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb 28 13:49:58 2019
+
+@author: yatha
+"""
+
  # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 18 18:37:20 2019
 
 @author: yatha
+
+
+
+Please see documentation on Lab2.py script
 """
 
 #Provied by Olac Fuentes
@@ -48,8 +59,10 @@ def Concatenate(L1,L2):
     t = L2.head
     while t is not None:
         Append(L1,t.item)
+        if t.next is None:
+            L1.tail=t
         t=t.next
-    
+   
 def Copy(L , theCopy):
     temp = L.head
     while temp is not None:
